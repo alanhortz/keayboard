@@ -3,3 +3,6 @@ build/gcov
 build/logs 
 build/temp
 build/test
+
+#Commit Driven Development
+COMMIT_MSG
