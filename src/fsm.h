@@ -13,7 +13,6 @@ struct Event
 struct Fsm
 {
    State state__; /* the current state */
-   char name__[]; /* the current state name */
 };
 
 /* "inlined" methods of Fsm class */
