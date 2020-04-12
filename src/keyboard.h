@@ -2,12 +2,17 @@
 #define KEYBOARD_H
 
  #include "fsm.h"
+ #include <stdarg.h>
   
+ extern int printf( const char *restrict format, ... );
+
   typedef struct Keyboard Keyboard;
   struct Keyboard
   {
      Fsm super_; /* extend the Fsm class */
      /* ... other attributes of Keyboard */
+     char stateName[16];
+     
   };
   
  void KeyboardCtor(Keyboard *me);
