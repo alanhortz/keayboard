@@ -3,8 +3,6 @@
 
  #include "fsm.h"
  #include <stdarg.h>
-  
- extern int printf( const char *restrict format, ... );
 
   typedef struct Keyboard Keyboard;
   struct Keyboard

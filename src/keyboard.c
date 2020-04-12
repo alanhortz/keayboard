@@ -1,6 +1,6 @@
 #include "keyboard.h"
 #include "display_controller.h"
- #include <stdio.h>
+#include <stdio.h>
 
 
  void KeyboardCtor(Keyboard *me)
