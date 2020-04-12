@@ -15,7 +15,7 @@ void tearDown(void)
 {
 }
 
-void test_Given_KeyboardInDefaultState_When_ShiftIsDepressed_Then_EntryIsUpperCased(void)
+void test_Given_KeyboardInDefaultState_When_ShiftIsDepressed_Then_EntryIsDisplayedUpperCased(void)
 {
   KeyboardEvt ke;
   
@@ -31,7 +31,7 @@ void test_Given_KeyboardInDefaultState_When_ShiftIsDepressed_Then_EntryIsUpperCa
 
   ke.super_.sig = ANY_KEY_SIG;
   ke.code = 'a';
-  display_Expect('A'); // We expect the keyboard to call display with an 'A'
+  display_Expect('A'); // We set the expectation that the keyboard have to call display with an 'A'
   FsmDispatch((Fsm *)&k, (Event *)&ke);  /* dispatch */
 
   printf("State name : %s", k.stateName);
