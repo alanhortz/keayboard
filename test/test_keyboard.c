@@ -1,4 +1,5 @@
 #include "unity.h"
+#include <string.h>
 #include "keyboard.h"
 #include "mock_display_controller.h"
 

@@ -1,6 +1,17 @@
 #include "keyboard.h"
-#include "display_controller.h"
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include "display_controller.h"
+
+// We can also have a conditional include : TEST -> Running tests under ceedling test:all
+
+// #ifdef TEST
+//   #include my_testable_substitute_layer.h
+// #else
+//   #include <avr/interrupt.h>
+// #endif
+
 
 
  void KeyboardCtor(Keyboard *me)
